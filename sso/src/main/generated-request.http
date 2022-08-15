@@ -1,0 +1,19 @@
+POST http://localhost:8080/api/test_sso/ssouser
+Content-Type: application/json
+
+{
+     "ssoType": "SSOData", 
+  "systemId": "VATDEDEV", 
+  "systemName": "ระบบบันทึกข้อมูลภาษีมูลค่าเพิ่มทดสอบ)", 
+  "systemTransactions": "PRIV-010,PRIV-020,PRIV-040,PRIV-050", 
+  "systemPrivileges": "0|0|0|0", 
+  "systemUserGroup": "GRP-010,GRP-020,GRP-040", 
+  "systemLocationGroup": "CliC001", 
+  "userId": "WS233999", 
+  "userFullName": "ประสาท จันทร์อังคาร ", 
+  "userRdOfficeCode": "01000999", 
+  "userOfficeCode": "01001139", 
+  "clientLocation": "01001139", 
+  "locationMachineNumber": "CLI00000718-9999", 
+  "tokenId": "eyJzdWIiOiIxMjM0IiwiYXVkIjpbImFkbWluIl0sImlzcyI6Im1hc29uLm1ldGFtdWcubmV0IiwiZXhwIjoxNTc0NTEyNzY1LCJpYXQiOjE1NjY3MzY3NjUsImp0aSI6ImY3YmZlMzNmLTdiZjctNGViNC04ZTU5LTk5MTc5OWI1ZWI4YSJ9"
+}
