@@ -1,5 +1,4 @@
-package com.pcc.sso.usercontroller;
-
+package com.pcc.sso.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,19 +25,19 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @RestController
-@RequestMapping(path = "api/test_sso/")
+@RequestMapping("/api/test_sso/")
 public class SsoUserController {
 
     @Autowired
     private SsoUserRepository userRepo ;
 
-    @GetMapping("sso_user_test")
+    @GetMapping("GetUsers")
     public List<SsoUser> getAllUsers() {
         return this.userRepo.findAll();
     }
 
     
-        @PostMapping("gettoken")
+    @PostMapping("gettoken")
     public ResponseEntity<SsoUserResponse> addUser( @RequestBody SsoUser users , ResponseHandler handler) {
         
 
@@ -61,6 +60,5 @@ public class SsoUserController {
         return new ResponseEntity<>(res,HttpStatus.OK);
 	    }
 
-    
 
 }
